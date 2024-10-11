@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <title>Upload PDF and Generate Questions</title>
+</head>
+<body>
+    <h1>Upload PDF and Generate Qns</h1>
+    <p style="text-align: center; color: #ffffff;">
+        This application allows you to upload a PDF file and generate questions based on the content of the specified pages. 
+        Just select the pages and the marks, and get started!
+    </p>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose PDF:</label>
+        <input type="file" name="file" id="file" required><br>
+
+        <label for="page_from">Page From:</label>
+        <input type="number" name="page_from" id="page_from" required><br>
+
+        <label for="page_to">Page To:</label>
+        <input type="number" name="page_to" id="page_to" required><br>
+
+        <label for="marks">Total Marks:</label>
+        <input type="number" name="marks" id="marks" required><br>
+
+        <button type="submit">Upload and Generate Questions</button>
+    </form>
+    <footer>
+        <p style="text-align: center; margin-top: 20px; color: #ffffff;">
+            Created by Akhil Jith
+        </p>
+    </footer>
+</body>
+</html>

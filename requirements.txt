@@ -1,0 +1,7 @@
+Flask==2.2.3
+Werkzeug==2.2.3
+Flask-WTF
+WTForms
+pdfminer.six==20201018
+spacy
+PyPDF2

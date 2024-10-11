@@ -1,0 +1,92 @@
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #0099ff, #66ccff); /* Gradient blue background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  h1 {
+    text-align: center;
+    color: #ffffff; /* White header text for contrast */
+    margin-bottom: 30px; /* Space below the header */
+  }
+
+  form {
+    background-color: white;
+    padding: 30px; /* Increased padding for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for better depth */
+    margin: auto;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+  }
+
+  form:hover {
+    transform: translateY(-5px);
+  }
+
+  label {
+    font-size: 16px;
+    color: #007BFF; /* Blue label text */
+    margin-bottom: 8px; /* Space below labels */
+    display: block; /* Block display for labels */
+  }
+
+  input[type="file"],
+  input[type="number"],
+  button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch area */
+    margin: 10px 0;
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+
+  input[type="file"]:hover,
+  input[type="number"]:hover,
+  button:hover {
+    border-color: #0056b3; /* Darker blue on hover */
+    background-color: #f0f8ff; /* Light blue background on hover */
+  }
+
+  button {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin: 20px;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 15px; /* Increased padding for list items */
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  li:hover {
+    transform: translateY(-3px);
+  }
+footer {
+    margin-top: 30px; /* Space above footer */
+    padding: 10px 0; /* Padding for the footer */
+    text-align: center; /* Center align text in footer */
+    color: #ffffff; /* White text color for footer */
+    font-size: 14px; /* Font size for footer */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Light background for footer */
+}
